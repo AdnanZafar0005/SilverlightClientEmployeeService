@@ -1,0 +1,28 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="SilverlightClientEmployeeService.MainPage"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid>
+        <TextBox x:Name="txtBoxId" HorizontalAlignment="Left" Height="23" Margin="112,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBoxName" HorizontalAlignment="Left" Height="23" Margin="111,59,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBoxDOB" HorizontalAlignment="Left" Height="23" Margin="111,123,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="btnGetEmployee" Content="Get Employee" HorizontalAlignment="Left" Margin="18,168,0,0" VerticalAlignment="Top" Width="91" Click="btnGetEmployee_Click"/>
+        <Button x:Name="btnsaveEmployee" Content="SaveEmployee" HorizontalAlignment="Left" Margin="120,167,0,0" VerticalAlignment="Top" Width="99" Click="btnsaveEmployee_Click"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="224,168,0,0" VerticalAlignment="Top" Width="75" Click="btnReset_Click"/>
+        <TextBox x:Name="txtBoxGender" HorizontalAlignment="Left" Height="23" Margin="112,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBlock x:Name="txtBlockMessage" HorizontalAlignment="Left" Margin="46,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="26" Width="286"/>
+
+        <sdk:Label x:Name="lblId" HorizontalAlignment="Left" Height="16" Margin="12,27,0,0" VerticalAlignment="Top" Width="72" Content="Id"/>
+        <sdk:Label x:Name="lblName" HorizontalAlignment="Left" Height="19" Margin="14,63,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="-0.061,0.058" Content="Name"/>
+        <sdk:Label x:Name="lblGender" HorizontalAlignment="Left" Height="18" Margin="15,94,0,0" VerticalAlignment="Top" Width="53" Content="Gender"/>
+        <sdk:Label x:Name="lblDOB" HorizontalAlignment="Left" Height="19" Margin="14,122,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.019,0.068" Content="DOB"/>
+        <sdk:Label x:Name="lblMessage" HorizontalAlignment="Left" Height="28" Margin="24,194,0,0" VerticalAlignment="Top" Width="268" Content=""/>
+
+    </Grid>
+</UserControl>
